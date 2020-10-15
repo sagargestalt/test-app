@@ -36,3 +36,127 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container {
+  background: #f2edf3;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.marks-container {
+  text-align: end;
+}
+
+.name-container {
+  text-align: center;
+  color:#AAAAAA;
+  font-size: 14px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #AAAAAA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-Image-Container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.student-profile-image {
+  height: 35px;
+  width: 35px;
+}
+
+.card-text {  
+  margin: 0;
+  color:#AAAAAA;
+  font-size: 12px;
+}
+
+.card-title {
+  font-size: small;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.card-title-info {
+  margin-top: 10px;
+}
+
+.text-left-align{
+  text-align: left;
+}
+
+
+.dropdown-decorate .btn-primary,
+.dropdown-decorate .btn-primary:hover
+.dropdown-decorate .btn-primary:focus {
+  color: gray;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dropdown-decorate .show> .btn-primary .dropdown-toggle  {
+  color: gray !important; 
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.list-group-items {
+  padding: 10px;
+}
+
+.left-nav-bar {
+  background-color: #373B53;
+  padding: 0;
+}
+
+.left-nav-logo-container {
+  background-color: #6F52ED;
+  height: 80px;
+  align-items: center;
+  justify-content: center
+}
+
+.left-nav-logo-container .main-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.nav-containt {
+  justify-content: flex-end;
+}
+
+.navbar-username {
+  font-size: small;
+}
+.navbar-username-meta {
+  color:#A6ACBE;
+  font-size: x-small;
+}
+
+.nav-div {
+  height:20px;
+  text-align: right;
+}
+
+.main-header {
+  text-align: left;
+}
+
+.main-sub-header {
+  color: '#AAAAAA';
+  padding-bottom: '20px';
+
+}
+
+
+
