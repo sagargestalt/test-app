@@ -24,7 +24,6 @@ class MainContainer extends Component {
            return Promise.all([res1.json(), res2.json()]) 
         })
         .then(([res1, res2]) => {
-          // set state in here
           this.setState({
             sortType:'desc',
             isLoaded: true,
