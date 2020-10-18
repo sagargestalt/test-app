@@ -6,7 +6,7 @@ import fetch  from '../__mock__/mock_student-api'
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
-    json: () => Promise.resolve(...fetch),
+    json: () => Promise.resolve(fetch),
   })
 );
 
