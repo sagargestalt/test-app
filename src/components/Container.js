@@ -1,11 +1,12 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { Container,Row,Col, Card } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import NavbarTop from './Nav';
+import NavbarLeft from './Left-Nav'
+import Header from './Header';
 import CardLayoutContainer from './CardLayout-Container'
 import List from'./List';
 import CONSTANTS from '../constants';
-import icon from '../icon/mainlogo.png';
 
 
 
@@ -45,22 +46,15 @@ function MainContainer () {
             <Container fluid="lg" className="main-container">
                 <Row >
                     <Col lg={1} className="left-nav-bar">
-                        <Row className="left-nav-logo-container">
-                            <Card.Img className="main-logo"  src={ icon } alt="avatar" />
-                        </Row>
-                        <Row></Row>
+                        <NavbarLeft/>
                     </Col>
                     <Col lg={11}>
-                        
                         <Container fluid="md">
                             <Row className="nav-containt">
                                 <NavbarTop/>
                             </Row>
                             <Row>
-                                <div className="main-header">
-                                    <h3>Dashboard</h3>
-                                    <div className="main-sub-header">Mobile UX/UI Design course</div>
-                                </div>
+                                <Header maintitle="Dashboard" subtitile="Mobile UX/UI Design course"/>
                             </Row>
                             <Row>
                                 <CardLayoutContainer data={ StudentMeta }/>

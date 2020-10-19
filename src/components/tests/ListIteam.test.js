@@ -14,7 +14,7 @@ const defaultProps = {
 
 let wrapped = shallow(<ListIteam data={defaultProps.data}></ListIteam>);
 describe('ListIteam', () => {
-    it('render Input without crashing', () => {
+    it('render component without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<ListIteam { ...defaultProps }></ListIteam>, div);
     });

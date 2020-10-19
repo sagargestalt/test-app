@@ -8,7 +8,7 @@ function NavbarTop(props){
     return (
         <div>
             <Row>
-                <Navbar variant="pills" activeKey="1" >
+                <Navbar variant="pills">
                     <Navbar.Brand >
                         <div className="nav-div">
                             <span className="navbar-username">Coddy Simmons</span>
