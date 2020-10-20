@@ -5,9 +5,9 @@ import {Card, Col, Row, ListGroup, DropdownButton, Dropdown} from 'react-bootstr
 
 function List(props){
 
-    const studList = props.data.map(data=>{
+    const studList = props.data.length > 0 ? props.data.map(data=>{
         return <ListItems key={ data.id } data={ data }/>
-    });
+    }): null;
 
     return (
         <Card style={{ width: '20rem' }}>
