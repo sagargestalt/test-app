@@ -1,9 +1,6 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
-import NavbarTop from './Nav';
-import NavbarLeft from './Left-Nav'
-import Header from './Header';
+import { Row } from 'react-bootstrap'
 import CardLayoutContainer from './CardLayout-Container'
 import List from'./List';
 import CONSTANTS from '../constants';
@@ -43,31 +40,17 @@ function MainContainer () {
 
 
     return (
-            <Container fluid="lg" className="main-container">
-                <Row >
-                    <Col lg={1} className="left-nav-bar">
-                        <NavbarLeft/>
-                    </Col>
-                    <Col lg={11}>
-                        <Container fluid="md">
-                            <Row className="nav-containt">
-                                <NavbarTop/>
-                            </Row>
-                            <Row>
-                                <Header maintitle="Dashboard" subtitile="Mobile UX/UI Design course"/>
-                            </Row>
-                            <Row>
-                                <CardLayoutContainer data={ StudentMeta }/>
-                            </Row>
-                            <Row>
-                                <List data={ StudentList } selectedOrderType = { sortType } changeOrder={ SortStudent }/>
-                            </Row>
-                        </Container>
-                    </Col>
+        
+            <React.Fragment>
+                <Row>
+                    <CardLayoutContainer data={ StudentMeta }/>
                 </Row>
-            </Container>
+                <Row>
+                    <List data={ StudentList } selectedOrderType = { sortType } changeOrder={ SortStudent }/>
+                </Row>
+            </React.Fragment>
+                               
     );
-
 
 }
 
